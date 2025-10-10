@@ -22,25 +22,25 @@ public class EjemploIfElseAnidados {
             o "Buenas noches".
         */
         
-//        int hora = 8;
-//        if(hora<8){
-//            System.out.println("Buenas noches");
-//        }else if(hora<14){
-//            System.out.println("Buenos dias");
-//        }else{
-//            System.out.println("Buenas tardes");
-//        }
-        
-        int hora = 25;
-        if(hora>=0 && hora<8){  // Si la hora es entre las 00 y las 08 (no inclusive)
+        int hora = 8;
+        if(hora<8){
             System.out.println("Buenas noches");
-        }else if(hora>=8 && hora<14){ // Si la hora es entre las 08 (inclusive) y las 14 (no inclusive)
+        }else if(hora<14){
             System.out.println("Buenos dias");
-        }else if (hora <24){ // Si la hora es entre las 14 (inclusive) y las 24 (no inclusive)
+        }else{
             System.out.println("Buenas tardes");
-        }else { // Si la hora es menor que 0 (no inclusive) y mayor que 24 (inclusive)
-            System.out.println("Error en la hora contemplada");
         }
+        
+//        int hora = 25;
+//        if(hora>=0 && hora<8){  // Si la hora es entre las 00 y las 08 (no inclusive)
+//            System.out.println("Buenas noches");
+//        }else if(hora>=8 && hora<14){ // Si la hora es entre las 08 (inclusive) y las 14 (no inclusive)
+//            System.out.println("Buenos dias");
+//        }else if (hora <24){ // Si la hora es entre las 14 (inclusive) y las 24 (no inclusive)
+//            System.out.println("Buenas tardes");
+//        }else { // Si la hora es menor que 0 (no inclusive) y mayor que 24 (inclusive)
+//            System.out.println("Error en la hora contemplada");
+//        }
         
 /* PROCESO SaludoHorario:
     DEFINIR hora COMO ENTERO;
