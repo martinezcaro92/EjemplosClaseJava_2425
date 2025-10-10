@@ -47,6 +47,43 @@ public class EjemploIfElse {
             System.out.println("Es chico");
         }
         
+        /* 
+            PROCESO ComprobacionChica:
+                DEFINIR esChica COMO BOOLEANA;
+                esChica <- true;
+                SI esChica == true ENTONCES:
+                    ESCRIBIR "Es chica";
+                SINO
+                    ESCRIBIR "Es chico";
+                FINSI
+            FINPROCESO
+        */
+        
+        /* ENUNCIADO: Definir una variable (aux) entera que tome valor 17 y verifique si el número
+            es par o impar
+        */
+        
+        int aux = 17;
+        if (aux%2==0)
+        {
+            System.out.println("El número " + aux + " es par");
+        } else
+        {
+            System.out.println("El número " + aux + " es impar");
+        }
+        
+        /* 
+            PSEUDOCÓDIGO
+            PROCESO NumerosParesImpares:
+                DEFINIR aux COMO ENTERO;
+                aux <- 17;
+                SI aux%2==0 ENTONCES:
+                    ESCRIBIR "El número " + aux + " es par";
+                SINO
+                    ESCRIBIR "El número " + aux + " es impar";
+                FINSI
+            FINPROCESO
+        */
     }
     
 }
