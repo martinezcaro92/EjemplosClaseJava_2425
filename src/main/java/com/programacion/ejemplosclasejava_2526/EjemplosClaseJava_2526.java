@@ -8,7 +8,7 @@ package com.programacion.ejemplosclasejava_2526;
  *
  * @author user
  */
-public class EjemplosClaseJava_XXXXXX {
+public class EjemplosClaseJava_2526 {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
