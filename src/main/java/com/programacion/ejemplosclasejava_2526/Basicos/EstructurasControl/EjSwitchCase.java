@@ -16,7 +16,7 @@ public class EjSwitchCase {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        /* ENUNCIADO: Diseña un programa que muestre un menú con operaciones: 
+        /* ENUNCIADO: Diseña un programa (1 iteración) que muestre un menú con operaciones: 
             ingresar dinero, retirar dinero, consultar saldo, salir.
         */
         
