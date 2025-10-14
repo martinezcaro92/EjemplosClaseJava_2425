@@ -41,7 +41,22 @@ public class EjWhile {
             total +=cantidad; // total = total + cantidad
             System.out.println("La cantidad total es: " + total);     
         }
-        
+        System.out.println("Prueba fuera de bucle");
+        /* PSEUDOCÓDIGO:
+            PROCESO Cajero:
+                DEFINIR cantidad, total COMO ENTERO;
+                cantidad <- 1;
+                total <- 0;
+                MIENTRAS cantidad != 0 HACER:
+                    ESCRIBIR "Introducir cantidad: ";
+                    LEER cantidad;
+                    SI cantidad == 0 ENTONCES:
+                        break;
+                    FINSI
+                    total <- total + cantidad;
+                    ESCRIBIR "La cantidad total es: " + total;
+            
+        */
         
         
         

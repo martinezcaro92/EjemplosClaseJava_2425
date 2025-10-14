@@ -4,6 +4,8 @@
  */
 package com.programacion.ejemplosclasejava_2526.Basicos.Bucles;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
@@ -20,10 +22,23 @@ public class EjDoWhile {
             se diga el total que hay en la cuenta bancaria
         */
         
-        /* ENUNCIADO: Se define e inicializa una contraseña numérica, se preguntará una contraseña numérica
+        /* ENUNCIADO: Se define e inicializa una contraseña numérica (entera), se preguntará una contraseña numérica
             por teclado y se comprobará si es correcta. Se repitirá esta operación mientras no coincida la
             contraseña.
         */
+        
+        int contrasena = 1234;
+        Scanner scan = new Scanner (System.in);
+        int contrasena2;
+        
+        do {
+            System.out.print("Introduzca la contrasena: ");
+            contrasena2 = scan.nextInt();
+        } while (contrasena != contrasena2);
+        System.out.println("Contraseña correcta");
+
+        
+        
     }
     
 }
