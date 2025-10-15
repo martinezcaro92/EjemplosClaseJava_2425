@@ -86,6 +86,7 @@ public class EjSwitchCase
                     total += cantidad;  // total = total + cantidad;
                     System.out.println("Operación realizada: " + total);
                 }
+                break;
             case 2:
                 System.out.print("Defina la cantidad a retirar: ");
                 cantidad = scan.nextInt();
@@ -102,12 +103,16 @@ public class EjSwitchCase
                         System.out.println("Operación realizada: " + total);
                     }
                 }
+                break;
             case 3:
                 System.out.println("Cantidad: " + total);
+                break;
             case 4:
                 System.out.println("Salir del programa...");
+                break;
             default:
                 System.out.println("Opción no contemplada.");
+                break;
         }
         
         /* ENUNCIADO: Solicita el tipo de producto ("alimentacion", "general", 
