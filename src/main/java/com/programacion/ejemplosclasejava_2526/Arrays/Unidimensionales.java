@@ -4,6 +4,8 @@
  */
 package com.programacion.ejemplosclasejava_2526.Arrays;
 
+import java.util.Scanner;
+
 /**
  *
  * @author josem
@@ -74,6 +76,46 @@ public class Unidimensionales {
             calificaciones de 5 estudiantes, muestre sus calificaciones por pantalla
             y obtenga la nota media de los 5 estudiantes
         */
+        
+        double notas2[] = new double[5];
+        double suma = 0;
+        double media = 0;
+        Scanner scan = new Scanner (System.in);
+        
+        for (int i = 0; i<notas2.length; i++)
+        {
+            System.out.print ("Introduzca nota del alumno: ");
+            notas2[i] = scan.nextDouble();
+            suma += notas2[i];
+        }
+        media = suma/notas2.length;
+        //System.out.println ("Las notas de los 5 alumnos son " + notas2[0]+ " " + notas2[1]+ " " + notas2[2]+ " " + notas2[3]+ " " + notas2[4]+ " ");
+        for (int i = 0; i<notas2.length; i++)
+        {
+            System.out.println("La nota del estudiante " + (i+1) + " es: " + notas2[i]);
+        } 
+        System.out.println (" La media de estas notas es " + media);
+        
+        /* ENUNCIADO2: A partir del Array notas3 con 3 notas, tome los valores por pantalla,
+            imprima los valores almacenados haciendo uso de un bucle while. 
+                COMENTARIO: Vamos a aprender este recurso, pero la forma óptima
+                    es con un bucle for
+        */
+        int notas3 [] = new int [3];
+        int i = 0;
+        
+        while (i<notas3.length)
+        {
+            System.out.print("Introduzca la nota del estudiante: ");
+            notas3[i] = scan.nextInt();
+            i++;
+        }
+        System.out.println("");
+        
+        for (i=0;i<notas3.length;i++)
+        {
+            System.out.println("La nota del estudiante " + (i+1) + " es: " + notas3[i]);
+        }
         
     }
     
