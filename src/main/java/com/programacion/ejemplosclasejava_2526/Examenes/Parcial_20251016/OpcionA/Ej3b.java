@@ -33,7 +33,7 @@ public class Ej3b {
                 System.out.println("Número fuera de rango. Intente nuevamente.");
             }
 
-        } while (suma < 100);
+        } while (suma <= 100);
 
         promedio = (double) suma / contador;
 

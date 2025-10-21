@@ -23,7 +23,7 @@ public class Ej3a {
             suma ← 0;
             contador ← 0;
 
-            Repetir
+            Hacer
                 Escribir "Introduce un número entre 1 y 5:";
                 Leer numero;
 
@@ -35,11 +35,11 @@ public class Ej3a {
                 FinSi
             Mientras suma <= 100;
 
-            promedio ← suma / contador;
+           promedio ← suma / contador;
 
             Escribir "Suma total acumulada: " + suma;
             Escribir "Número de iteraciones válidas: " + contador;
-            Escribir "Promedio de los números introducidos: " + promedio;
+            Escribir "Promedio de los números introducidos: " + promedio; 
         FinProceso
 
 

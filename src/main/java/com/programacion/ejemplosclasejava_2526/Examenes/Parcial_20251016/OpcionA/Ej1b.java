@@ -50,6 +50,7 @@ public class Ej1b {
 
             default:
                 System.out.println("Opción no válida");
+                break;
         }
 
     }

@@ -23,7 +23,7 @@ public class Ej3a {
             suma ← 0;
             contador ← 0;
 
-            Mientras suma < 100 Hacer
+            Mientras suma <= 100 Hacer
                 Escribir "Introduce un número entre 6 y 10:";
                 Leer numero;
 

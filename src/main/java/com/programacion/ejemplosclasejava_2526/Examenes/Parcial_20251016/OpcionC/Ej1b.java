@@ -35,18 +35,19 @@ public class Ej1b {
         switch (opcion) {
             case 1:
                 double pulgadas = metros * 39.37;
-                System.out.printf("Resultado: %.2f pulgadas%n", pulgadas);
+                System.out.println("Resultado: "+ pulgadas+" pulgadas");
                 break;
             case 2:
                 double yardas = metros * 1.09361;
-                System.out.printf("Resultado: %.2f yardas%n", yardas);
+                System.out.println("Resultado: " + yardas + " yardas");
                 break;
             case 3:
                 double pies = metros * 3.28084;
-                System.out.printf("Resultado: %.2f pies%n", pies);
+                System.out.println("Resultado: " + pies + " pies");
                 break;
             default:
                 System.out.println("Opción no válida");
+                break;
         }
     }
     

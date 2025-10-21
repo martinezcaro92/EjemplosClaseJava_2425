@@ -22,7 +22,7 @@ public class Ej3b {
         int numero, suma = 0, contador = 0;
         double promedio;
 
-        while (suma < 100) {
+        while (suma <= 100) {
             System.out.print("Introduce un número entre 6 y 10: ");
             numero = scanner.nextInt();
 
