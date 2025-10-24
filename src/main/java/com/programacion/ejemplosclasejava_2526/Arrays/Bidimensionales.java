@@ -112,9 +112,21 @@ public class Bidimensionales {
         
         /* ENUNCIADO: Se define una matriz que recoja las calificaciones enteras de diferentes
             estudiantes y módulos profesionales. Se trata de 5 estudiantes y 4 módulos 
-            profesionales. Los datos deben introducirse por teclado y, una vez definidas todas 
-            las calificaciones, debe imprimir un resumen de las mismas.
+            profesionales. Los datos deben introducirse por teclado, donde se pida la
+            nota de un estudiante (j) y un módulo profesional (i).
+            
+            Una vez definidas todas  las calificaciones, debe imprimir un resumen 
+            de las mismas.
         */
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         /* ENUNCIADO: Realizar el juego de 3 en raya ('X', 'O') donde, utilizando
             una matriz de 3x3 se permita indicar coordenadas (fila y columna) para 
