@@ -148,7 +148,7 @@ public class Bidimensionales {
             Pista: Emplear un sólo bucle for para guardar los datos y utilizar el método
                 de doble bucle for para imprimir el estado de la partida. Se debe pedir
                 la coordenada donde guardar la información. Se alternarán 'X' y 'O' para
-                iteraciones pares e impares respectivamente.
+                iteraciones pares e impares respectivamente. Sale el jugador con 'X';
         */
     }
     
