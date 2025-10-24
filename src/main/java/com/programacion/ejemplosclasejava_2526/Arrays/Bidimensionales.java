@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package com.programacion.ejemplosclasejava_2526.Arrays;
+import java.util.Scanner;
 
 /**
  *
@@ -120,13 +121,23 @@ public class Bidimensionales {
         */
         
         
-        
-        
-        
-        
-        
-        
-        
+        Scanner scan = new Scanner(System.in);
+
+        int notas2[][] = new int [4][5];
+
+        for(int i = 0; i<notas2.length; i++){
+            for(int j = 0; j<notas2[i].length; j++){
+                System.out.print("Nota del estudiante " + (i+1) + " en la materia "+ (j+1) + ":" );
+                notas2[i][j] = scan.nextInt();
+            }
+        }
+
+        for(int i = 0; i<notas2.length; i++){
+            for(int j = 0; j<notas2[i].length; j++){
+                System.out.print(notas2[i][j] + " ");
+            }
+            System.out.println("");
+        }
         
         /* ENUNCIADO: Realizar el juego de 3 en raya ('X', 'O') donde, utilizando
             una matriz de 3x3 se permita indicar coordenadas (fila y columna) para 
@@ -134,7 +145,13 @@ public class Bidimensionales {
             reservada, no se modifica y se pierde turno. Al finalizar cada iteración,
             se muestra todo el tablero añadiendo la última jugada.
         
+            Pista: Emplear un sólo bucle for para guardar los datos y utilizar el método
+                de doble bucle for para imprimir el estado de la partida. Se debe pedir
+                la coordenada donde guardar la información. Se alternarán 'X' y 'O' para
+                iteraciones pares e impares respectivamente.
         */
     }
+    
+
     
 }
