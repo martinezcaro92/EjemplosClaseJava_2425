@@ -150,6 +150,58 @@ public class Bidimensionales {
                 la coordenada donde guardar la información. Se alternarán 'X' y 'O' para
                 iteraciones pares e impares respectivamente. Sale el jugador con 'X';
         */
+        
+        Scanner sc = new Scanner(System.in);
+        char[][] tablero = new char[3][3]; // matriz del juego 3x3
+        
+        // Inicializar el tablero con espacios vacíos
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                tablero[i][j] = '-';
+            }
+        }
+
+        System.out.println("=== JUEGO DEL 3 EN RAYA ===");
+        System.out.println("Coordenadas válidas: filas y columnas del 0 al 2\n");
+        char jugador;
+        // Bucle principal: máximo 9 jugadas
+        for (int turno = 0; turno < 9; turno++) {
+            if (turno % 2 == 0)
+            {
+                jugador = 'X';
+            } else {
+                jugador = 'O';
+            }
+            System.out.println("Turno del jugador " + jugador);
+
+            // Solicitar coordenadas
+            System.out.print("Introduce fila (0-2): ");
+            int fila = sc.nextInt();
+            System.out.print("Introduce columna (0-2): ");
+            int columna = sc.nextInt();
+
+            // Comprobación de validez
+            if (fila < 0 || fila > 2 || columna < 0 || columna > 2) {
+                System.out.println("Coordenadas fuera del rango. Pierdes el turno.\n");
+            } else if (tablero[fila][columna] == 'X' || tablero[fila][columna] == 'O') {
+                System.out.println("Casilla ya ocupada. Pierdes el turno.\n");
+            } else {
+                tablero[fila][columna] = jugador; // jugada válida
+            }
+
+            // Mostrar el tablero actualizado
+            System.out.println("\nEstado actual del tablero:");
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    System.out.print(tablero[i][j] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+        System.out.println("Partida finalizada. ¡Gracias por jugar!");
+        sc.close();
     }
     
 
