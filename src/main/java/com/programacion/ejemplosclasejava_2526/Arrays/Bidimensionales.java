@@ -28,7 +28,7 @@ public class Bidimensionales {
                 tipoVariable [][] nombreVariable = new tipoVariable [X][Y]; // X se sustituye por el número de filas
                                                                             // Y se sustituye por el número de columnas
             - Declaración e inicialización:
-                tipoVariable [] nombreVariable = {{x,y,z},{a,b,c}}; // En este caso el array tiene dimensión (2,3)
+                tipoVariable [][] nombreVariable = {{x,y,z},{a,b,c}}; // En este caso el array tiene dimensión (2,3)
     */
     public static void main(String[] args) {
         // TODO code application logic here
