@@ -162,7 +162,7 @@ public class Bidimensionales {
         }
 
         System.out.println("=== JUEGO DEL 3 EN RAYA ===");
-        System.out.println("Coordenadas válidas: filas y columnas del 0 al 2\n");
+        System.out.println("Coordenadas válidas: filas y columnas del 0 al 2");
         char jugador;
         // Bucle principal: máximo 9 jugadas
         for (int turno = 0; turno < 9; turno++) {
@@ -182,17 +182,27 @@ public class Bidimensionales {
 
             // Comprobación de validez
             if (fila < 0 || fila > 2 || columna < 0 || columna > 2) {
-                System.out.println("Coordenadas fuera del rango. Pierdes el turno.\n");
+                System.out.println("Coordenadas fuera del rango. Pierdes el turno.");
             } else if (tablero[fila][columna] == 'X' || tablero[fila][columna] == 'O') {
-                System.out.println("Casilla ya ocupada. Pierdes el turno.\n");
+                System.out.println("Casilla ya ocupada. Pierdes el turno.");
             } else {
                 tablero[fila][columna] = jugador; // jugada válida
             }
+            
+//            MÉTODO ALTERNATIVO DE ASIGNACIÓN DE POSICIONES A UN JUGADOR POR TURNO
+//            if (fila < 0 || fila > 2 || columna < 0 || columna > 2) {
+//                System.out.println("Coordenadas fuera del rango. Pierdes el turno.");
+//            } else if (tablero[fila][columna] == '-') {
+//                tablero[fila][columna] = jugador; // jugada válida
+//            } else {
+//                System.out.println("Casilla ya ocupada. Pierdes el turno.");
+//            }
+            
 
             // Mostrar el tablero actualizado
-            System.out.println("\nEstado actual del tablero:");
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
+            System.out.println("Estado actual del tablero:");
+            for (int i = 0; i < tablero.length; i++) {
+                for (int j = 0; j < tablero[i].length; j++) {
                     System.out.print(tablero[i][j] + " ");
                 }
                 System.out.println();
@@ -203,7 +213,7 @@ public class Bidimensionales {
         System.out.println("Partida finalizada. ¡Gracias por jugar!");
         sc.close();
     }
-    
-
-    
+    /* ENUNCIADO DE MEJORA: Buscar cómo definir una condición de parada cuando
+        un jugador realice un tres en raya en el tablero de jugada.
+    */
 }
