@@ -74,12 +74,108 @@ public class Multidimensionales {
         
         int aux1 [][][] = {{{1,2},{3,4}},{{5,6},{7,8}}};
         int aux2 [][][][] = new int [4][4][4][4];
-        
+        double test [][][];
+        char [][][][] var = new char [10][5][2][3];
         
         /* ENUNCIADO: Suponer que en una clase hay dos estudiantes que estudian 
             cinco módulos profesionales en dos cursos académicos. Definir y reservar 
             espacio para el array que almacene la información
         */
+        int notas [][][] = new int [2][5][2];
+        // Se genera una dimensión por cada tipo de dato (estudiantes, módulos 
+        // profesionales y cursos académicos.
+        
+        /* RECORRIDO DE ARRAYS MULTIDIMENSIONALES
+            Al igual que en en arrays unidimensionales y multidimensionales, se utiliza  
+            un bucle for para recorrer todas las posiciones, dado que su dimensión es 
+            de (N,...,N); en un array multidimensional, se deben emplear tantos bucles for  
+            como dimensiones tenga el array para recorrer todas sus posiciones. 
+            Estos bucles for se encuentran anidados.
+        
+            for (int i = 0; i<var.length; i++){
+                for (int j = 0; j<var[i].length; j++) {
+                    ...
+                        for (int q = 0; q<var[i][j]...[p].lenght; q++){
+                            // Cualquier acción que involucre a var[i][j]...[q]
+                        }
+                }
+            }
+            * 3D:
+                for (int i = 0; i<var.length; i++){
+                    for (int j = 0; j<var[i].length; j++) {
+                        for (int k = 0; k<var[i][j].lenght; k++){
+                            acciones con array[i][j][k];
+                        }
+                    }
+                }
+            * 4D:
+                for (int i = 0; i<var.length; i++){
+                    for (int j = 0; j<var[i].length; j++) {
+                        for (int k = 0; k<var[i][j].lenght; k++){
+                            for (int l = 0; l<var[i][j][k].lenght; l++){
+                                acciones con array[i][j][k][l];
+                            }
+                        }
+                    }
+                }
+            * 5D:
+                for (int i = 0; i<var.length; i++){
+                    for (int j = 0; j<var[i].length; j++) {
+                        for (int k = 0; k<var[i][j].lenght; k++){
+                            for (int l = 0; l<var[i][j][k].lenght; l++){
+                                for (int m = 0; m<var[i][j][k][l].lenght; m++){
+                                    acciones con array[i][j][k][l][m];
+                                }
+                            }
+                        }
+                    }
+                }
+        */
+//        //Definir y reservar memoria para un array de 3x2x3 llamado prueba, e imprimir
+//        // los indicadores de cada posición (no los valores de cada posición).
+//        
+//        int prueba [][][] = new int [3][2][3];
+//        
+//        for (int i = 0; i < prueba.length; i++) {
+//            for (int j = 0; j < prueba[i].length; j++){
+//                for (int k = 0; k< prueba[i][j].length; k++){
+//                    System.out.println("["+i+"]["+j+"]["+k+"]");
+//                }
+//            }
+//        }
+//        
+//        //Definir y reservar memoria para un array de 5x3x6x9x5 llamado prueba2, e imprimir
+//        // los indicadores de cada posición (no los valores de cada posición).
+//        int prueba2 [][][][][] = new int [5][3][6][9][5];
+//        
+//        for (int i = 0; i < prueba2.length; i++) {
+//            for (int j = 0; j < prueba2[i].length; j++){
+//                for (int k = 0; k< prueba2[i][j].length; k++){
+//                    for (int l = 0; l < prueba2[i][j][k].length; l++){
+//                        for (int m = 0; m< prueba2[i][j][k][l].length; m++){
+//                            System.out.println("["+i+"]["+j+"]["+k+"]["+l+"]["+m+"]");
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+    /* Imprimir los valores almacenados en el array multidimensional aux1
+        int aux1 [][][] = {{{1,2},{3,4}},{{5,6},{7,8}}};
+        Indicar antes del valor almacenado la posición que ocupa.
+    */
+        for (int i = 0; i < aux1.length; i++) {
+            for (int j = 0; j < aux1[i].length; j++){
+                for (int k = 0; k< aux1[i][j].length; k++){
+                    //Solución 1
+//                    System.out.print("["+i+"]["+j+"]["+k+"] = ");
+//                    System.out.println(aux1[i][j][k]);
+                    
+                    //Solución 2
+                    System.out.println("["+i+"]["+j+"]["+k+"] = " + aux1[i][j][k]);
+                }
+            }
+        }
     }
 }
 

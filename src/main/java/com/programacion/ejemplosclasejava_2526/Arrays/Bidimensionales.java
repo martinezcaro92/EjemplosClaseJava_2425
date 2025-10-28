@@ -59,7 +59,7 @@ public class Bidimensionales {
         
         /* RECORRIDO DE ARRAYS BIDIMENSIONALES
             Al igual que en en arrays unidimensionales se utiliza un bucle for para 
-            recorrer todas las posiciones, dado que su dimensión es de (1,N); en un
+            recorrer todas las posiciones, dado que su dimensión es de (N,M); en un
             array bidimensional, se deben emplear dos bucles for para recorrer todas
             sus posiciones. Estos bucles for se encuentran anidados.
         
