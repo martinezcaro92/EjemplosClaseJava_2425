@@ -1,4 +1,4 @@
-# EjemplosClaseJava_XXXXXX
+# EjemplosClaseJava_2526
 ## Proyecto de Programación en Java
 
 Este repositorio contiene los **ejemplos y ejercicios realizados en clase** dentro del módulo profesional de **Programación**, perteneciente al Ciclo Formativo de Grado Superior en la familia profesional de **Informática y Comunicaciones**.
