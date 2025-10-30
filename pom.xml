@@ -10,5 +10,5 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.programacion.ejemplosclasejava_xxxxxx.EjemplosClaseJava_XXXXXX</exec.mainClass>
     </properties>
-    <name>EjemplosClaseJava_2425</name>
+    <name>EjemplosClaseJava_2526</name>
 </project>
