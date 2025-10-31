@@ -104,7 +104,7 @@ public class Strings {
         */
         System.out.println(saludo1.substring(4));
         
-    /* indexOf (char caracter)
+    /* indexOf (String cadena)
         indica en qué posición se encuentra la cadena indicado por 
         primera vez, buscandodesde el principio
         */    
@@ -114,7 +114,44 @@ public class Strings {
         String buscar = "Hola";
         System.out.println(saludo1.substring(saludo1.indexOf(buscar), (saludo1.indexOf(buscar)+buscar.length())));
         
+       /* lastIndexOf (String cadena)
+        indica en qué posición se encuentra el carácter (o cadena) indicado por primera vez, buscando desde el final
+        */
+       
+        String texto = "Jose Manuel";
+        System.out.println(texto.lastIndexOf("e"));
         
+        String texto2 = "Hola Mundo Mundo";
+        System.out.println(texto2.lastIndexOf("Mundo"));
+        System.out.println(texto2.lastIndexOf("mundo"));
+        System.out.println(texto2.lastIndexOf("w"));
+        // Las dos líneas anteriores no coinciden con el contenido de texto2. En ese
+        // caso imprime el valor -1
+        
+        /* startsWith (String prefijo)
+            dice si la cadena comienza con el prefijo indicado
+        */
+        System.out.println(texto2.startsWith("Hola"));  // Devuelve true
+        System.out.println(texto2.startsWith("Mundo")); // Devuelve false
+        
+        /* endsWith (String sufijo)
+            dice si la cadena termina con el sufijo indicado
+        */
+        String correo = "nombre.apellido@iesramonarcas.es";
+        System.out.println(correo.endsWith("@iesramonarcas.es")); // Devuelve true
+        System.out.println(correo.endsWith("@iesjuanbosco.es")); // Devuelve false
+        
+        /* String[] split(String patron)
+            fragmenta la cadena en varias subcadenas utilizando el patrón indicado como separador
+        */
+        String [] correo2 = correo.split("@");
+        for (int i = 0 ; i<correo2.length; i++){
+            System.out.println("Posición " + i +": " + correo2[i]);
+        }
+        String [] correo3 = correo.split("[@.]");
+        for (int i = 0 ; i<correo3.length; i++){
+            System.out.println("Posición " + i +": " + correo3[i]);
+        }
     }
     
 }
