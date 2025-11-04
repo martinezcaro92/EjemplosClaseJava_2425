@@ -59,6 +59,20 @@ public class Teoria {
         System.out.println("");
         saludo("Dieguito");
         saludo("Pedrito");
+        
+        
+    }
+    
+    /* A la pregunta de, ¿se pueden definir dos métodos con el mismo nombre?
+        La respuesta es SI y se debe al POLIMORFISMO.
+    */
+    public static double sumar (double A, double B)  // CABECERA DEL MÉTODO
+    {                                       // A PARTIR DE AQUÍ CUERPO DEL MÉTODO
+        return A+B;
+    }
+    public static int sumar (int A, int B, int C)  // CABECERA DEL MÉTODO
+    {                                       // A PARTIR DE AQUÍ CUERPO DEL MÉTODO
+        return A+B+C;
     }
     
     public static int sumar (int A, int B)  // CABECERA DEL MÉTODO
