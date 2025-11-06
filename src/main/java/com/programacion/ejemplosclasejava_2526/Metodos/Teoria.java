@@ -63,6 +63,40 @@ public class Teoria {
         
     }
     
+    /* ¿Qué tipos de datos puede devolver un método?
+        - int
+        - double
+        - String
+        - char
+        - void (vacío)
+        - boolean
+        - float
+        - ARRAYS
+            - int []
+            - int [][]
+            - int []...[]
+    */
+    /* IMPORTANTE: En programación estructurada, no se podrá emplear información dentro de un
+        método que no haya sido proporcionada mediante el argumento de dicho método.
+    */
+    
+   
+    public static double [] notaMaxMin (double [] notas)
+    {
+        // Método notaMaxMin toma como argumento notas [] y devuelve un array 
+        // unidimensional con el valor máximo [0] y valor mínimo [1]
+        return new double [2];
+    }
+    
+    public static int [][] matrizTrafico ()
+    {
+        return new int [3][4];
+    }
+    
+    public static boolean [][][] comprobarVivienda (int [][] viviendas)
+    {
+        return new boolean [3][4][5];
+    }
     /* A la pregunta de, ¿se pueden definir dos métodos con el mismo nombre?
         La respuesta es SI y se debe al POLIMORFISMO.
     */
@@ -84,6 +118,8 @@ public class Teoria {
         //return "Hola soy Pepito"; //Esto no sería correcto porque el tipo de dato
                                     // devuelto no coincide
     }
+    
+    
     
     public static int restar (int A, int B)
     {
