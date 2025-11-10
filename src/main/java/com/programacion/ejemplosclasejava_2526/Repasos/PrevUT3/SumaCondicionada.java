@@ -19,9 +19,9 @@ public class SumaCondicionada {
      */
     public static void main(String[] args) {
         double lanzamientos [] = {5.2, 3.7, 2.1, 0.4, 3.4, 2.8, 7.1, 4.6};
-        boolean validacion [] = {false, true, true, true, false, false, true, true};
+        boolean validacion [] = {false, true, true, true, false, false, false, true};
         double sumaTotal = 0;
-        double distMax = Integer.MIN_VALUE;
+        double distMax = Integer.MIN_VALUE;//0
         
         for (int i = 0; i<lanzamientos.length; i++)
         {
@@ -35,6 +35,8 @@ public class SumaCondicionada {
             }
 
         }
+        System.out.println("Suma Total: " + sumaTotal);
+        System.out.println("Distancia max: " + distMax);
     }
     
 }
