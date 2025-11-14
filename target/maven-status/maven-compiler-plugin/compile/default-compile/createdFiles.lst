@@ -21,6 +21,7 @@ com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionC\Ej1b.c
 com\programacion\ejemplosclasejava_2526\Repasos\PrevUT3\StringEj15.class
 com\programacion\ejemplosclasejava_2526\Metodos\Teoria.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionA\Ej1a.class
+com\programacion\ejemplosclasejava_2526\POO\Vaso.class
 com\programacion\ejemplosclasejava_2526\Arrays\Bidimensionales.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionB\Ej4b.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionA\Ej3a.class
@@ -34,6 +35,7 @@ com\programacion\ejemplosclasejava_2526\Basicos\Bucles\EjFor.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionB\Ej3b.class
 com\programacion\ejemplosclasejava_2526\Basicos\EstructurasControl\EjSwitchCase.class
 com\programacion\ejemplosclasejava_2526\Repasos\PrevUT3\TresEnRaya.class
+com\programacion\ejemplosclasejava_2526\POO\PersonaTest.class
 com\programacion\ejemplosclasejava_2526\Repasos\PrevUT3\SumaCondicionada.class
 com\programacion\ejemplosclasejava_2526\Repasos\PrevUT3\StringEj14.class
 com\programacion\ejemplosclasejava_2526\UT2\EjemploIfElse.class
@@ -42,6 +44,7 @@ com\programacion\ejemplosclasejava_2526\UT2\MinMaxArray.class
 com\programacion\ejemplosclasejava_2526\Metodos\CalculadoraNotaMediaConMetodosAvanzada.class
 com\programacion\ejemplosclasejava_2526\CadenasDeCaracteres\Ej1.class
 com\programacion\ejemplosclasejava_2526\Metodos\CalculadoraBasicaConMetodos.class
+com\programacion\ejemplosclasejava_2526\POO\Rectangulo.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionC\Ej4b.class
 com\programacion\ejemplosclasejava_2526\Arrays\Multidimensionales.class
 com\programacion\ejemplosclasejava_2526\Basicos\Bucles\DosBuclesAnidados.class
@@ -50,5 +53,7 @@ com\programacion\ejemplosclasejava_2526\Metodos\CodigoOptimizadoMetodos.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionB\Ej3a.class
 com\programacion\ejemplosclasejava_2526\EjemplosClaseJava_2526.class
 com\programacion\ejemplosclasejava_2526\Examenes\Parcial_20251016\OpcionC\Ej2b.class
+com\programacion\ejemplosclasejava_2526\POO\Persona.class
 com\programacion\ejemplosclasejava_2526\UT2\RecorridoArray.class
 com\programacion\ejemplosclasejava_2526\Basicos\EstructurasControl\EjemploIf.class
+com\programacion\ejemplosclasejava_2526\POO\Auto.class
