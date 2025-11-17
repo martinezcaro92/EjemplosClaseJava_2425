@@ -32,6 +32,9 @@ public class TestingPoo {
 
         //Persona p3 = new Persona(33333333); // Esto no es válido porque no existe un
         // constructor que tome sólo una variable de entrada de tipo entera
+        
+        Vehiculo v1 = new Vehiculo ();
+        Vehiculo v2 = new Vehiculo ("1445LLL", "Seat", 1900, "negro", 4, "Ibiza");
     }   
     
 }
