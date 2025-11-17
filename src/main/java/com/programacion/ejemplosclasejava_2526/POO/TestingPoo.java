@@ -35,6 +35,7 @@ public class TestingPoo {
         
         Vehiculo v1 = new Vehiculo ();
         Vehiculo v2 = new Vehiculo ("1445LLL", "Seat", 1900, "negro", 4, "Ibiza");
+        
     }   
     
 }
