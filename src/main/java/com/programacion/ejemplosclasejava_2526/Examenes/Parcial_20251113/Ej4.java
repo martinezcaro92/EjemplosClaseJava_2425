@@ -36,7 +36,7 @@ public class Ej4 {
     public static int[] modificarArray(int[] array, boolean condicion) {
         int[] resultado = new int[array.length];
 
-        if (condicion) {
+        if (condicion == true) {
             // Si es TRUE: primero pares, luego impares
             int indiceInicio = 0;
             int indiceFinal = array.length - 1;

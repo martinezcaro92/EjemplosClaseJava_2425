@@ -36,11 +36,11 @@ public class Ej5 {
         do {
             System.out.print("Introducir NRE: ");
             aux = scan.nextInt();
-            if (aux<1 || aux>5)
+            if (aux<1 || aux>10)
             {
                 System.out.println("Valor no válido. Vuelva a intentarlo.");
             }
-        } while (aux<1 || aux>5);
+        } while (aux<1 || aux>10);
         
         return aux;
     }
