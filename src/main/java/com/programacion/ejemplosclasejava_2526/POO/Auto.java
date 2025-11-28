@@ -54,5 +54,24 @@ public class Auto {
         this.termostato = value;
     }
     
+    /*private String marca;
+    private int cantidadPuertas;
+    private String color;
+    private int cilindrada;
+    private double consumoCombustible;
+    private int kilometrosRealizados;
+    private double termostato;*/
+    
+    public String toString ()
+    {
+        return "Auto[marca=" + this.marca + 
+                        ", cantidadPuertas=" + this.cantidadPuertas + 
+                        ", color="+this.color +
+                        ", cilindrada=" + this.cilindrada +
+                        ", consumoCombustible="+this.consumoCombustible +
+                        ", kilometrosRealizados="+this.kilometrosRealizados +
+                        ", termostato="+this.termostato + 
+                        "]";
+    }
     
 }

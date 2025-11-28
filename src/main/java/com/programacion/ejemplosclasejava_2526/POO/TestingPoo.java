@@ -36,6 +36,20 @@ public class TestingPoo {
         Vehiculo v1 = new Vehiculo ();
         Vehiculo v2 = new Vehiculo ("1445LLL", "Seat", 1900, "negro", 4, "Ibiza");
         
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(v1.toString());
+        System.out.println(v2.toString());
+        
+        Vaso va1 = new Vaso ("taza", "redonda", "blanca", "ceramica", "ninguno");
+        Auto au1 = new Auto ();
+        Rectangulo r1 = new Rectangulo ();
+        
+        System.out.println(va1.toString());
+        System.out.println(au1.toString());
+        System.out.println(r1.toString());
+
+        
     }   
     
 }
