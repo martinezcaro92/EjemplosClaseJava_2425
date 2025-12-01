@@ -42,11 +42,8 @@ public class Rectangulo {
         String izqSup = "(";
         for (int i = 0; i<coordenadaSuperiorIzquierda.length;i++){
             izqSup += coordenadaSuperiorIzquierda[i];
-            if (i==coordenadaSuperiorIzquierda.length-1){
-                izqSup +=")";
-            } else {
-                izqSup +=", ";
-            }
+            if (i==coordenadaSuperiorIzquierda.length-1)izqSup +=")";
+            else izqSup +=", ";
         }
         String derInf = "(";
         for (int i = 0; i<coordenadaInferiorDerecha.length;i++){
