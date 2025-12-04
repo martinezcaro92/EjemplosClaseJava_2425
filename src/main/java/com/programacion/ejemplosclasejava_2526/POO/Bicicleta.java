@@ -12,6 +12,8 @@ public class Bicicleta {
     /*Definición de atributos*/ 
     private int revoluciones;
     private int pinonActual;
+    private final String propietario;
+    private double multiplicador [] = {2, 1.5, 1, 0.5, 0.3};
     
     /*Definición de métodos*/ 
     public void pedalear()
@@ -36,16 +38,26 @@ public class Bicicleta {
     
     public void mostrarVelocidad ()
     {
-        double multiplicador [] = {2, 1.5, 1, 0.5, 0.3};
-        double velocidad = pinonActual  * multiplicador [pinonActual-1];
-        System.out.println("La velocidad actual es: " + velocidad);
+        double velocidad = revoluciones  * multiplicador [pinonActual-1];
+        System.out.println("La velocidad actual es: " + velocidad + ". El propietario es: " + propietario);
+    }
+    
+    public String getPropietario()
+    {
+        return this.propietario;
+    }
+    
+    public double obtenerVelocidad()
+    {
+        return revoluciones  * multiplicador [pinonActual-1];
     }
     
     /*Definición de constructor*/ 
-    public Bicicleta ()
+    public Bicicleta (String propietario)
     {
         this.revoluciones = 0;
         this.pinonActual = 3;
+        this.propietario = propietario;
     }
     
     /*Constructor completo, pero el enunciado no lo pide*/
@@ -57,8 +69,8 @@ public class Bicicleta {
     
     public static void main(String[] args) {
         /*Crea dos objetos de la clase bicicleta: miBicicleta y tuBicicleta */
-        Bicicleta miBicicleta = new Bicicleta ();
-        Bicicleta tuBicicleta = new Bicicleta ();
+        Bicicleta miBicicleta = new Bicicleta ("JoseM");
+        Bicicleta tuBicicleta = new Bicicleta ("Pepe");
         
         /*Pedalea dos veces con miBici y cambia al piñón 2. */
         miBicicleta.pedalear();
@@ -77,8 +89,16 @@ public class Bicicleta {
         tuBicicleta.pedalear();
         tuBicicleta.cambiarPinon(5);
         
-        /*Muestra ambas velocidades */
+        /*Muestra ambas velocidades (método mostrarVelocidad()*/
+        System.out.println("Uso del método mostrarVelocidad()");
         miBicicleta.mostrarVelocidad();
         tuBicicleta.mostrarVelocidad();
+        System.out.println("");
+        
+        /*Muestra ambas velocidades (método obtenerVelocidad()*/
+        System.out.println("Uso del método obtenerVelocidad()");
+        System.out.println("La velocidad de miBicicleta es: " + miBicicleta.obtenerVelocidad() + ". El propietario es: " + miBicicleta.getPropietario());
+        System.out.println("La velocidad de tuBicicleta es: " + tuBicicleta.obtenerVelocidad() + ". El propietario es: " + tuBicicleta.getPropietario());
+
     }
 }
