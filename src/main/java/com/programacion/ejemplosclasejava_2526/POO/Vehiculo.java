@@ -78,4 +78,14 @@ public class Vehiculo {
     public void setModelo (String modelo) {
         this.modelo = modelo;
     }
+    
+    public String toString(){
+        return "Vehiculo[matricula=" + this.matricula +
+                            ", marca="+ this.marca + 
+                            ", cilindrada=" + this.cilindrada + 
+                            ", color=" + this.color +
+                            ", ruedas=" + this.ruedas + 
+                            ", modelo=" + this.modelo + 
+                            "]";
+    }
 }

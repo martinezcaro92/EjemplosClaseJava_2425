@@ -20,4 +20,20 @@ public class Vaso {
     private String material;
     private String dibujo;
     
+    public Vaso(){
+        
+    }
+    public Vaso (String nombre, String forma, String color, String material, String dibujo)
+    {
+        this.nombre = nombre;
+        this.forma = forma;
+        this.color = color;
+        this.material = material;
+        this.dibujo = dibujo;
+    }
+    
+    public String toString(){
+        return "Vaso[nombre=" + this.nombre + ", forma=" + this.forma + ", color=" + this.color + ", material="+this.material + ", dibujo=" + this.dibujo + "]";
+    }
+    
 }

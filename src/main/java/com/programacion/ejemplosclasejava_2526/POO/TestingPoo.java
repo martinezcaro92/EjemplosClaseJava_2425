@@ -36,6 +36,51 @@ public class TestingPoo {
         Vehiculo v1 = new Vehiculo ();
         Vehiculo v2 = new Vehiculo ("1445LLL", "Seat", 1900, "negro", 4, "Ibiza");
         
+        /*Los arrays, además de los tipos de datos utilizados hasta ahora, también
+            pueden ser definidos para almacenar objetos. A continuación, se muestra
+            un ejemplo */
+        
+        Vehiculo vh1 [] = new Vehiculo [2];
+        vh1[0] = v1;
+        vh1[1] = v2;
+        
+        Vehiculo vh2 [] = {v1, v2};
+        
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(v1.toString());
+        System.out.println(v2.toString());
+        
+        Vaso va1 = new Vaso ("taza", "redonda", "blanca", "ceramica", "ninguno");
+        Auto au1 = new Auto ();
+        Rectangulo r1 = new Rectangulo ();
+        
+        System.out.println(va1.toString());
+        System.out.println(au1.toString());
+        System.out.println(r1.toString());
+
+        Vaso va2 = new Vaso ("copa", "alargada", "transparente", "vidrio", "ninguno");
+        Vaso va3 = new Vaso ("chupito", "pequeño", "color", "plastico", "ninguno");
+
+        /* A continuación se genera un array de tipo Vaso (llamado vs_array) con 3 posiciones*/
+        Vaso vs_array [] = new Vaso [3];
+        /*Ahora se procede a almacenar en cada posición del array (vs_array) un objeto Vaso concreto*/
+        // vs_array va1[]= new Vaso [0]; --> Esto es incorrecto
+        vs_array[0] = va1;
+        vs_array[1] = va2;
+        vs_array[2] = va3;
+        
+        System.out.println("");
+        /*Al tener los objetos almacenados en un array, se puede acceder a ellos mediante
+            un bucle. Como venimos utilizando en arrays, haremos uso de un bucle for*/
+        
+        for (int i = 0; i < vs_array.length; i++)
+        {
+            /*Si el método toString() existe dentro de un objeto, las dos líneas siguientes
+                son equivalentes*/
+            System.out.println(vs_array[i]);
+            //System.out.println(vs_array[i].toString());
+        }
     }   
     
 }

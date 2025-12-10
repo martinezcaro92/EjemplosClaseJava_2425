@@ -86,4 +86,13 @@ public class Persona {
     /* Esta clase no contiene un método main. Por lo tanto, en la POO no es 
         obligatorio el uso de métodos main en todas las clases
     */
+    
+    /*El método toString() permite obtener de un objeto:
+        - La clase de la que parte
+        - Una lista de atributos y el valor asignado a cada uno de ellos
+    */
+        
+    public String toString(){
+        return "Persona[DNI=" + this.DNI + ", nombre="+this.nombre+", apellido="+this.apellido+", direccion="+this.direccion+"]";
+    }
 }
